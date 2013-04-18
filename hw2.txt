@@ -1,0 +1,10 @@
+def factor(x):
+    factors = []
+    n = 2
+    while x > 1:
+        if x % n == 0:
+            x = x / n
+            factors.append(n)
+        else:
+            n += 1
+    return factors
